@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.snow_wrap {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999999;
+  pointer-events: none;
+}
+
+.snow,.snow:after,.snow::before {
+  content: '';
+  position: absolute;
+  top: -650px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: radial-gradient(4px 4px at 100px 50px,#fff,transparent),radial-gradient(6px 6px at 200px 150px,#fff,transparent),radial-gradient(3px 3px at 300px 250px,#fff,transparent),radial-gradient(4px 4px at 400px 350px,#fff,transparent),radial-gradient(6px 6px at 500px 100px,#fff,transparent),radial-gradient(3px 3px at 50px 200px,#fff,transparent),radial-gradient(4px 4px at 150px 300px,#fff,transparent),radial-gradient(6px 6px at 250px 400px,#fff,transparent),radial-gradient(3px 3px at 350px 500px,#fff,transparent),radial-gradient(4px 4px at 550px 550px,#fff,transparent);
+  background-size: 250px 250px;
+  animation: SnowAnim 3s linear infinite;
+  pointer-events: none;
+}
+
+.snow:after {
+  margin-left: -250px;
+  opacity: 0.5;
+  filter: blur(2px);
+  animation-direction: reverse;
+  animation-duration: 6s;
+}
+
+.snow::before {
+  margin-left: -350px;
+  opacity: 0.7;
+  filter: blur(1px);
+  animation-direction: reverse;
+  animation-duration: 9s;
+}
+
+@keyframes SnowAnim {
+  from {
+      transform: translateY(0);
+  }
+
+  to {
+      transform: translateY(250px);
+  }
+}
+
+.header {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  background-color: #fff;
+  padding-bottom: 0.7rem;
+  width: 100%;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding: 0.7rem 2rem 0 2rem;
+}
+
+.header ul li:not(.logo):hover {
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 3rem;
+  padding-right: 20rem;
+  font-weight: 500;
+}
+
+.selected {
+  font-weight: bold;
+}
+
+ul .red {
+  color: red;
+}
+
+.wish {
+  width: 1.3rem; 
+}
+
+.input_box {
+  border: 1.3px solid #000000;
+  width: 8.5rem;
+  height: 1.3rem;
+  font-size: 0.8rem;
+  background-color: transparent;
+  color: #000000;
+}
+
+.input_box:focus {
+  outline: none;
+}
+
+.women_item {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 8rem 2rem;
+}
+
+.item_box {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.item_box img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.1s ease;
+}
+
+.item_box:hover img {
+  opacity: 0;
+}
+
+.item1 { background-image: url("../img/w_item1_back.jpg"); }
+.item2 { background-image: url("../img/w_item2_back.jpg"); }
+.item3 { background-image: url("../img/w_item3_back.jpg"); }
+.item4 { background-image: url("../img/w_item4_back.jpg"); }
+.item5 { background-image: url("../img/w_item5_back.jpg"); }
+.item6 { background-image: url("../img/w_item6_back.jpg"); }
+.item7 { background-image: url("../img/w_item7_back.jpg"); }
+.item8 { background-image: url("../img/w_item8_back.jpg"); }
+.item9 { background-image: url("../img/w_item9_back.jpg"); }
+.item10 { background-image: url("../img/w_item10_back.jpg"); }
+.item11 { background-image: url("../img/w_item11_back.jpg"); }
+.item12 { background-image: url("../img/w_item12_back.jpg"); }
+
+.title_item {
+  min-height: 6rem;
+  margin-top: 0.5rem;
+}
+
+.title_item p:nth-of-type(2) {
+  margin-top: 0.7rem;
+  font-weight: 500;
+}
+
+.women_item div:first-child .title_item p:nth-of-type(2):after {
+  content: '15%';
+  color: red;
+  margin-left: 1rem;
+}
+
+.women_item div:nth-child(2) .title_item p:nth-of-type(2):after, 
+.women_item div:nth-child(3) .title_item p:nth-of-type(2):after,
+.women_item div:nth-child(4) .title_item p:nth-of-type(2):after,
+.women_item div:nth-child(5) .title_item p:nth-of-type(2):after,
+.women_item div:nth-child(6) .title_item p:nth-of-type(2):after,
+.women_item div:nth-child(7) .title_item p:nth-of-type(2):after,
+.women_item div:nth-child(10) .title_item p:nth-of-type(2):after,
+.women_item div:nth-child(11) .title_item p:nth-of-type(2):after,
+.women_item div:nth-child(12) .title_item p:nth-of-type(2):after {
+  content: '5%';
+  color: red;
+  margin-left: 1rem;
+}
+
+.women_item div:nth-child(8) .title_item p:nth-of-type(2):after,
+.women_item div:nth-child(9) .title_item p:nth-of-type(2):after {
+  content: '20%';
+  color: red;
+  margin-left: 1rem;
+}

@@ -3,16 +3,23 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Barlow Condensed", sans-serif;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 #container {
   max-width: 1300px;
   margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .snow_wrap {
@@ -67,6 +74,9 @@ a {
   position: fixed;
   z-index: 999;
   top: 0;
+  background-color: #fff;
+  padding-bottom: 0.7rem;
+  width: 100%;
 }
 
 .header ul {
@@ -77,7 +87,6 @@ a {
   font-weight: 400;
   font-size: 0.9rem;
   padding: 0.7rem 2rem 0 2rem;
-  
 }
 
 .header ul li:not(.logo):hover {
@@ -90,6 +99,10 @@ a {
   font-weight: 500;
 }
 
+.selected {
+  font-weight: bold;
+}
+
 ul .red {
   color: red;
 }
@@ -99,104 +112,32 @@ ul .red {
 }
 
 .input_box {
-  border: 1.3px solid #fff;
+  border: 1.3px solid #000000;
   width: 8.5rem;
   height: 1.3rem;
   font-size: 0.8rem;
   background-color: transparent;
-  color: #fff;
+  color: #000000;
 }
 
 .input_box:focus {
   outline: none;
 }
 
-.slider {
-  width: 100%;  
-  height: 100%;
-  overflow: hidden;
+.editorial_item {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 8rem 2rem;
 }
 
-.slides {
-  display: flex;
-  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.slides img {
+.editorial_item img {
   width: 100%;
-  height: 100%;
 }
 
-.women img,
-.men img,
-.acc img {
-  width: 100%;
-  display: block;
-}
-
-.women,
-.men,
-.acc {
-  position: relative;
-}
-
-.women_text,
-.men_text,
-.acc_text {
-  color: #fff;
-  position: absolute;
-}
-
-.women_text,
-.men_text,
-.acc_text {
-  top: 85%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.main_wrapper h2 {
-  font-size: 2.7rem;
-}
-
-.main_wrapper a {
-  display: block;
-  text-align: center;
-  margin-top: 1rem;
-}
-
-.main_wrapper a:hover {
-  font-weight: bold;
-}
-
-.footer_wrapper {
-  max-width: 100%;
-  height: 18rem;
-  margin: 0 auto;
-  display: flex;
-  gap: 10rem;
-  padding: 5rem 2rem;
-}
-
-.footer_wrapper h5 {
-  margin-bottom: 0.9rem;
-  font-size: 0.9rem;
-}
-
-.footer_wrapper a {
-  display: inline-block;
-}
-
-.footer_wrapper a img {
-  background-color: black;
-  border-radius: 50%;
-  width: 2rem;
-  margin-right: 1rem;  
-}
-
-.footer_wrapper p {
-  margin-bottom: 0.5rem;
-  font-size: 0.8rem;
-  font-weight: 450;
-  letter-spacing: 2px;
+.editorial_item p {
+  font-size: 1rem;
+  margin: 0.3rem 0 3rem 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
