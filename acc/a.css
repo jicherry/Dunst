@@ -1,4 +1,4 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -69,19 +69,48 @@ a {
   position: fixed;
   z-index: 999;
   top: 0;
-  background-color: #fff;
+  background: #fff !important;
   padding-bottom: 0.7rem;
   width: 100%;
 }
 
-.header ul {
-  list-style: none;
+.header ul{
   display: flex;
   gap: 2.5rem;
   align-items: center;
   font-weight: 400;
   font-size: 0.9rem;
   padding: 0.7rem 2rem 0 2rem;
+}
+
+.header ul li {
+  list-style: none;
+}
+
+.women_menu {
+  position: relative;
+}
+
+.sub_link {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #373737;
+  margin-top: 0.35rem;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+}
+
+.sub_link:hover {
+  font-weight: bold;
+}
+
+.women_menu:hover .sub_link {
+  opacity: 1;
 }
 
 .header ul li:not(.logo):hover {
@@ -94,12 +123,13 @@ a {
   font-weight: 500;
 }
 
-ul .red {
+ul .red a {
   color: red;
 }
 
 .wish {
   width: 1.3rem; 
+  filter: none !important;
 }
 
 .input_box {
@@ -138,16 +168,18 @@ ul .red {
   opacity: 0;
 }
 
-.item1 { background-image: url("../img/m_item1_back.jpg"); }
-.item2 { background-image: url("../img/m_item2_back.jpg"); }
-.item3 { background-image: url("../img/m_item3_back.jpg"); }
-.item4 { background-image: url("../img/m_item4_back.jpg"); }
-.item5 { background-image: url("../img/m_item5_back.jpg"); }
-.item6 { background-image: url("../img/m_item6_back.jpg"); }
-.item7 { background-image: url("../img/m_item7_back.jpg"); }
-.item8 { background-image: url("../img/m_item8_back.jpg"); }
-.item9 { background-image: url("../img/m_item9_back.jpg"); }
-.item10 { background-image: url("../img/m_item10_back.jpg"); }
+.item1 { background-image: url("../img/acc_item1_back.jpg"); }
+.item2 { background-image: url("../img/acc_item2_back.jpg"); }
+.item3 { background-image: url("../img/acc_item3_back.jpg"); }
+.item4 { background-image: url("../img/acc_item4_back.jpg"); }
+.item5 { background-image: url("../img/acc_item5_back.jpg"); }
+.item6 { background-image: url("../img/acc_item6_back.jpg"); }
+.item7 { background-image: url("../img/acc_item7_back.jpg"); }
+.item8 { background-image: url("../img/acc_item8_back.jpg"); }
+.item9 { background-image: url("../img/acc_item9_back.jpg"); }
+.item10 { background-image: url("../img/acc_item10_back.jpg"); }
+.item11 { background-image: url("../img/acc_item11_back.jpg"); }
+.item12 { background-image: url("../img/acc_item12_back.jpg"); }
 
 .title_item {
   min-height: 6rem;
@@ -155,21 +187,38 @@ ul .red {
 }
 
 .title_item p:nth-of-type(2) {
-  margin-top: 0.7rem;
-  font-weight: 500;
+  color: #c5c5c5;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
-.men_item div:first-child .title_item p:nth-of-type(2):after,
-.men_item div:nth-child(3) .title_item p:nth-of-type(2):after,
-.men_item div:nth-child(4) .title_item p:nth-of-type(2):after,
-.men_item div:nth-child(6) .title_item p:nth-of-type(2):after,
-.men_item div:nth-child(7) .title_item p:nth-of-type(2):after,
-.men_item div:nth-child(8) .title_item p:nth-of-type(2):after,
-.men_item div:nth-child(9) .title_item p:nth-of-type(2):after, 
-.men_item div:nth-child(10) .title_item p:nth-of-type(2):after {
+.title_item p:nth-of-type(3) {
+  margin-top: 0.7rem;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.acc_item div:first-child .title_item p:nth-of-type(3):after,
+.acc_item div:nth-child(11) .title_item p:nth-of-type(3):after,
+.acc_item div:nth-child(12) .title_item p:nth-of-type(3):after {
+  content: '30%';
+  color: red;
+  margin-left: 1rem;
+}
+
+.acc_item div:nth-child(2) .title_item p:nth-of-type(3):after,
+.acc_item div:nth-child(3) .title_item p:nth-of-type(3):after,
+.acc_item div:nth-child(4) .title_item p:nth-of-type(3):after,
+.acc_item div:nth-child(5) .title_item p:nth-of-type(3):after,
+.acc_item div:nth-child(6) .title_item p:nth-of-type(3):after,
+.acc_item div:nth-child(7) .title_item p:nth-of-type(3):after,
+.acc_item div:nth-child(8) .title_item p:nth-of-type(3):after,
+.acc_item div:nth-child(9) .title_item p:nth-of-type(3):after,
+.acc_item div:nth-child(10) .title_item p:nth-of-type(3):after {
   content: '5%';
   color: red;
   margin-left: 1rem;
 }
 
- */
+

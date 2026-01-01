@@ -74,9 +74,9 @@ a {
   position: fixed;
   z-index: 999;
   top: 0;
-  background-color: #fff;
   padding-bottom: 0.7rem;
   width: 100%;
+  background: #fff !important;
 }
 
 .header ul {
@@ -109,6 +109,7 @@ ul .red {
 
 .wish {
   width: 1.3rem; 
+  filter: none !important;
 }
 
 .input_box {

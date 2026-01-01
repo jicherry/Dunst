@@ -4,7 +4,7 @@ const sideImg = document.querySelector('.side_img');
 const imageData = {
   25: ['side2025_1.jpg',  'side2025_2.jpg', 'side2025_3.jpg', 'side2025_4.jpg'],
   24: ['side2024_1.jpg', 'side2024_2.jpg', 'side2024_3.jpg', 'side2024_4.jpg' , 'side2024_5.jpg', 'side2024_6.jpg' , 'side2024_7.jpg'],
-  23: ['side2023_1.jpg' , 'side2023_2.jpg'],
+  23: ['side2023_1.jpg' , 'side2023_2.jpg', 'side2023_3.jpg' , 'side2023_4.jpg','side2023_5.jpg' , 'side2023_6.jpg' , 'side2023_7.jpg'],
   22: ['side2022_1.jpg' , 'side2022_2.jpg' , 'side2022_3.jpg'],
   21: ['side2021_1.jpg', 'side2021_2.jpg']
 };
