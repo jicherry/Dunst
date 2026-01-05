@@ -249,11 +249,10 @@ ul .red {
   margin-left: 1rem;
 }
 
-
 .btn {
   text-align: center;
   margin-top: -2rem;
-  height: 10rem;
+  height: 5rem;
 }
 
 button {
@@ -263,6 +262,10 @@ button {
 
 button:hover {
   color: #616161;
+}
+
+.btn i {
+  vertical-align: middle;
 }
 
 
