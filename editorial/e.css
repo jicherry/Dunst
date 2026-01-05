@@ -89,6 +89,36 @@ a {
   padding: 0.7rem 2rem 0 2rem;
 }
 
+.header ul li {
+  list-style: none;
+}
+
+.women_menu {
+  position: relative;
+}
+
+.sub_link {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #373737;
+  margin-top: 0.35rem;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+}
+
+.sub_link:hover {
+  font-weight: bold;
+}
+
+.women_menu:hover .sub_link {
+  opacity: 1;
+}
+
 .header ul li:not(.logo):hover {
   font-weight: bold;
 }

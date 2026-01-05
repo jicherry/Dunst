@@ -75,13 +75,42 @@ a {
 }
 
 .header ul {
-  list-style: none;
   display: flex;
   gap: 2.5rem;
   align-items: center;
   font-weight: 400;
   font-size: 0.9rem;
   padding: 0.7rem 2rem 0 2rem;
+}
+
+.header ul li {
+  list-style: none;
+}
+
+.women_menu {
+  position: relative;
+}
+
+.sub_link {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #373737;
+  margin-top: 0.35rem;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+}
+
+.sub_link:hover {
+  font-weight: bold;
+}
+
+.women_menu:hover .sub_link {
+  opacity: 1;
 }
 
 .header ul li:not(.logo):hover {
@@ -155,6 +184,13 @@ ul .red {
 .item10 { background-image: url("../img/w_item10_back.jpg"); }
 .item11 { background-image: url("../img/w_item11_back.jpg"); }
 .item12 { background-image: url("../img/w_item12_back.jpg"); }
+.item13 { background-image: url("../img/w_item13_back.jpg"); }
+.item14 { background-image: url("../img/w_item14_back.jpg"); }
+.item15 { background-image: url("../img/w_item15_back.jpg"); }
+.item16 { background-image: url("../img/w_item16_back.jpg"); }
+.item17 { background-image: url("../img/w_item17_back.jpg"); }
+.item18 { background-image: url("../img/w_item18_back.jpg"); }
+.item19 { background-image: url("../img/w_item19_back.jpg"); }
 
 .title_item {
   min-height: 6rem;
@@ -174,6 +210,7 @@ ul .red {
   margin-top: 0;
 }
 
+.women_item div:first-child .title_item p:nth-of-type(3):after,
 .women_item div:nth-child(2) .title_item p:nth-of-type(3):after, 
 .women_item div:nth-child(3) .title_item p:nth-of-type(3):after,
 .women_item div:nth-child(4) .title_item p:nth-of-type(3):after,
@@ -182,7 +219,11 @@ ul .red {
 .women_item div:nth-child(7) .title_item p:nth-of-type(3):after,
 .women_item div:nth-child(10) .title_item p:nth-of-type(3):after,
 .women_item div:nth-child(11) .title_item p:nth-of-type(3):after,
-.women_item div:nth-child(12) .title_item p:nth-of-type(3):after {
+.women_item div:nth-child(12) .title_item p:nth-of-type(3):after,
+.women_item div:nth-child(14) .title_item p:nth-of-type(3):after,
+.women_item div:nth-child(16) .title_item p:nth-of-type(3):after,
+.women_item div:nth-child(17) .title_item p:nth-of-type(3):after,
+.women_item div:nth-child(19) .title_item p:nth-of-type(3):after {
   content: '5%';
   color: red;
   margin-left: 1rem;
@@ -194,3 +235,34 @@ ul .red {
   color: red;
   margin-left: 1rem;
 }
+
+.women_item div:nth-child(13) .title_item p:nth-of-type(3):after,
+.women_item div:nth-child(15) .title_item p:nth-of-type(3):after {
+  content: '30%';
+  color: red;
+  margin-left: 1rem;
+}
+
+.women_item div:nth-child(18) .title_item p:nth-of-type(3):after {
+  content: '40%';
+  color: red;
+  margin-left: 1rem;
+}
+
+
+.btn {
+  text-align: center;
+  margin-top: -2rem;
+  height: 10rem;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #616161;
+}
+
+
