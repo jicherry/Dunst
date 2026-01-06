@@ -182,6 +182,8 @@ ul .red {
 .item8 { background-image: url("../img/m_item8_back.jpg"); }
 .item9 { background-image: url("../img/m_item9_back.jpg"); }
 .item10 { background-image: url("../img/m_item10_back.jpg"); }
+.item11 { background-image: url("../img/m_item11_back.jpg"); }
+.item12 { background-image: url("../img/m_item12_back.jpg"); }
 
 .title_item {
   min-height: 6rem;
@@ -220,7 +222,9 @@ ul .red {
   margin-left: 1rem;
 }
 
-.men_item div:nth-child(5) .title_item p:nth-of-type(3):after {
+.men_item div:nth-child(5) .title_item p:nth-of-type(3):after,
+.men_item div:nth-child(11) .title_item p:nth-of-type(3):after,
+.men_item div:nth-child(12) .title_item p:nth-of-type(3):after {
   content: '30%';
   color: red;
   margin-left: 1rem;

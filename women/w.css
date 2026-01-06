@@ -258,6 +258,7 @@ ul .red {
 button {
   all: unset;
   cursor: pointer;
+  font-weight: 450;
 }
 
 button:hover {
