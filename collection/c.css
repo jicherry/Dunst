@@ -183,3 +183,31 @@ ul .red {
   max-width: 55rem;
   display: block;   
 }
+
+/* 반응형 */
+
+@media (max-width: 767px) {
+  .logo {
+    font-size: 2.2rem;
+    font-weight: 550;
+    padding-right: 0;
+  }
+
+  .header .hamburger {
+    color: #000;
+  }
+
+  .side_img {
+    margin-left: 0;     
+  }
+
+  .side_menu{
+    margin-top: -2.5rem;
+    font-size: 0.9rem;
+  }
+
+  .side_menu ul{
+    display: flex;
+    justify-content: space-around;
+  }
+}

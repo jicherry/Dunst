@@ -312,7 +312,8 @@ a {
   }
 
   .logo {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    font-weight: 550;
     padding-right: 0;
   }
 
@@ -329,7 +330,7 @@ a {
   }
 
   .header.menu_open {
-    background: white;
+    background: #fff;
   }
   
   .header.menu_open a {
@@ -338,6 +339,11 @@ a {
   
   .header.menu_open .hamburger i {
     color: black;
+  }
+
+  .mobile_menu a {
+    font-size: 1.2rem;
+    font-family: "Barlow Condensed";
   }
 
   .slides img:nth-of-type(1) {
@@ -407,6 +413,10 @@ a {
   summary::-webkit-details-marker {
     display: none;
   }
+
+  .footer_mobile[open] summary i {
+  transform: rotate(180deg);
+}
 
   summary i {
     color: #b9b9b9;

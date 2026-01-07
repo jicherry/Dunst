@@ -230,3 +230,16 @@ ul .red {
   margin-left: 1rem;
 }
 
+/* 반응형 */
+
+@media (max-width: 767px) {
+  .logo {
+    font-size: 2.2rem;
+    font-weight: 550;
+    padding-right: 0;
+  }
+
+  .header .hamburger {
+    color: #000;
+  }
+}

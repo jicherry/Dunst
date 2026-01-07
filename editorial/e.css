@@ -172,3 +172,17 @@ ul .red {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+
+/* 반응형 */
+
+@media (max-width: 767px) {
+  .logo {
+    font-size: 2.2rem;
+    font-weight: 550;
+    padding-right: 0;
+  }
+
+  .header .hamburger {
+    color: #000;
+  }
+}

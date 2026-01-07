@@ -1,6 +1,6 @@
 const slides = document.querySelector('.slides');
 const slideWidth = 100;
-const slideCount = 5;
+const slideCount = 4;
 
 let index = 0;
 
@@ -35,8 +35,8 @@ scrollBtn.addEventListener("click", () => {
   });
 });
 
-/* 모바일 */
 
+/* 모바일 */
 const hamburgerIcon = document.querySelector('.hamburger i');
 const mobileMenu = document.querySelector('.mobile_menu');
 const header = document.querySelector('.header');
