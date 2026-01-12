@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.login_container {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.home {
+  display: block;
+  width: 1.1rem;
+  margin-top: 1rem;
+  margin-left: auto
+}
+
+.logo {
+  width: 7rem;
+  display: block;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.form {
+  width: 100%;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.3rem;
+}
+
+.login_item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-top: none;
+}
+
+label {
+  font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 0.7rem;
+  border: 1.2px solid #ccc;
+  border-radius: 6px;
+}
+
+
+input[type="submit"] {
+  padding: 1rem;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}

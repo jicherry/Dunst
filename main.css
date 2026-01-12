@@ -69,6 +69,7 @@ a {
   top: 0;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
   height: 5rem;
+  width: 100%;
 }
 
 .header ul {
@@ -131,14 +132,13 @@ a {
 }
 
 .red a {
-  color: red;
+  color: #e01919e3;
 }
 
 .wish {
   width: 1.3rem; 
   filter: brightness(0) invert(1);
 }
-
 
 .input_box {
   border: 1.3px solid #fff;
@@ -315,6 +315,10 @@ a {
     font-size: 2.2rem;
     font-weight: 550;
     padding-right: 0;
+  }
+  
+  ul .s_red {
+    color: #e01919e3;
   }
 
   .hamburger {
